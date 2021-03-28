@@ -1,0 +1,58 @@
+.menu{
+    float: left;
+    width: 6%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3%;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+}
+li{
+    margin: 0;
+    padding: 0;
+}
+li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 70px;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+li a.active {
+    background-color: gray;
+}
+
+li a:hover:not(.activate) {
+    width: 100%;
+}
+
+li a::before{
+    content: '';
+    display: block;
+    width: 200%;
+    height: 3px;
+    position: relative;
+    left: -100%;
+    top: 27px;
+    background-color:#b1060f;
+    transition: 0.5s;
+}
+
+li a:hover::before{
+    left:0%;
+}
